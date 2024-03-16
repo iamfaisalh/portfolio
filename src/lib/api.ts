@@ -20,7 +20,7 @@ export default async function api(options: AxiosRequestConfig) {
         return Promise.reject(error.response || error.message);
     }
 
-    return client(options)
+    return client({ ...options, withCredentials: true })
         .then(onSuccess)
         .catch(onError);
 }
