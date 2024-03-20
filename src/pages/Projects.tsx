@@ -126,7 +126,7 @@ const PROJECTS: Array<ProjectProps> = [
         title: "Picture Detector",
         description: "iOS application where you can upload a picture and it will detect what is likely in the picture using machine learning and neural networks.",
         skills: "Swift, Apple Core ML, ResNet-50",
-        github_url: "https://github.com/iamfaisalh/concentration",
+        github_url: "https://github.com/iamfaisalh/picture-detector",
         live_url: ""
     },
     {
