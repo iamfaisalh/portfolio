@@ -17,13 +17,9 @@ interface ProjectProps {
     live_url?: string;
 }
 
-// const ANIMATIONS = ["md:slide-in-tr", "md:slide-in-tl", "md:slide-in-br", "md:slide-in-bl"];
-
 function Project({ project }: { project: ProjectProps }) {
 
-    // const animation = ANIMATIONS[Math.floor(Math.random() * ANIMATIONS.length)];
-    // const cn = "max-w-sm rounded-lg shadow-xl bg-brand-gray relative overflow-hidden border-brand-pink border-[1px] border-opacity-35 " + animation;
-    const cn = "max-w-sm rounded-lg shadow-xl bg-brand-gray relative overflow-hidden border-brand-pink border-[1px] border-opacity-35";
+    const cn = "max-w-sm rounded-lg shadow-xl bg-brand-gray relative overflow-hidden border-brand-pink border-[1px] border-opacity-35 fade-in";
 
     return (
         <div className={cn}>

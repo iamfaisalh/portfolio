@@ -29,10 +29,10 @@ export default function About() {
             <div className="px-6 flex flex-col items-center justify-center gap-4 pt-6">
                 <img className=" w-32 h-32 rounded-full bounce-in-top" src={PFP} alt="Faisal Hakimi" />
                 <p className="text-sm">
-                    I'm a software engineer based in the San Francisco Bay Area with three years of professional
-                    experience as the lead engineer of a SaaS startup and over seven years of programming experience.
-                    Why "fizzle.dev"? My nickname is Fizzle, and I develop web and mobile applications.
-                    Aside from coding, some things about me are that I like to explore new foods, cook,
+                    I'm a full-stack software engineer based in the San Francisco Bay Area with three years of professional
+                    experience as the lead engineer of a high growth B2C SaaS startup and over seven years of
+                    programming experience. Why "fizzle.dev"? My nickname is Fizzle, and I develop web and mobile
+                    applications. Aside from coding, some things about me are that I like to explore new foods, cook,
                     go to the gym, watch sports, play Call of Duty, work on cars, and I love animals (especially cats).
                 </p>
             </div>
@@ -51,35 +51,50 @@ export default function About() {
                 <SkillRating skill={"Swift"} rating={6.5} />
                 <SkillRating skill={"Ruby"} rating={5} />
             </div>
+            <div className="px-6 pt-6 flex flex-col">
+                <p className="font-semibold text-sm mt-2 mb-1">Overall List of Hard and Soft Skills</p>
+                <p className="text-sm space-y-1">
+                    React, Redux, Python, Django, Node.js, Next.js, TypeScript, JavaScript, MongoDB, Postgres, Tailwind CSS,
+                    Git, GitHub, Java, C programming, C++, Swift, Ruby, Amazon Web Services AWS, OpenAI, Google Cloud Platform GCP,
+                    Communication, Collaboration, Problem-solving, Adaptability, Time Management, Leadership, Creativity,
+                    Client Management, Attention to Detail, Conflict Resolution.
+                </p>
+            </div>
             <Divider id={"about-experience"} label={"Experience"} labelSize={"text-lg"} className={"px-6"} />
             <div className="px-6 flex flex-col">
                 <div className="flex flex-col">
                     <p className="text-lg font-bold">Software Engineer, Full Stack</p>
-                    <p className="font-semibold text-sm">Puzzl</p>
+                    <p className="font-semibold text-sm">Puzzl | San Francisco, California</p>
                     <p className="font-semibold text-sm">2021 - 2024</p>
                     <p className="font-semibold text-sm mt-2 mb-1">Relevant Skills</p>
                     <p className="text-sm space-y-1">
-                        Python, Django, Node.js, React, JavaScript, TypeScript, MongoDB, AWS, Figma, GitHub, Tailwind CSS.
+                        Python, Django, Node.js, React, Redux, TypeScript, JavaScript, MongoDB, AWS, GCP, Git, GitHub,
+                        TailwindCSS, Figma, Open AI Assistants API, Stripe API.
                     </p>
                     <p className="font-semibold text-sm mt-2 mb-1">Key Responsibilities</p>
                     <ul className="text-sm list-disc pl-4 space-y-1">
                         <li>
-                            Built a <span className="text-brand-pink">B2C SaaS</span> payment system for invoicing using the <span className="text-brand-pink">Stripe API</span>.
+                            Developed robust web applications using <span className="text-brand-pink">modern front-end frameworks</span> adhering
+                            to <span className="text-brand-pink">UI/UX design principles</span>, increasing user engagement by 30%.
                         </li>
                         <li>
-                            Employed <span className="text-brand-pink">agile methodologies</span> to manage project scope, prioritize tasks, and allocate resources efficiently,
-                            resulting in on-time delivery and <span className="text-brand-pink">exceeding stakeholder expectations</span>.
+                            Implemented a <span className="text-brand-pink">scalable back-end microservices architecture and REST API</span>,
+                            enabling the system to handle a 3x increase in user traffic without any downtime.
                         </li>
                         <li>
-                            <span className="text-brand-pink">Optimized algorithms</span> for faster processing, reducing overall computation time.
+                            Authored a comprehensive technical documentation, reducing onboarding time for new developers by 20%.
                         </li>
                         <li>
-                            Established efficient communication channels within the team, leading to better <span className="text-brand-pink">collaboration</span> among
-                            members during project development phases.
+                            Applied <span className="text-brand-pink">automated testing procedures</span>, reducing the number of bugs by 60% improving
+                            overall software reliability, and saving approximately 20 hours per week in testing cycles.
                         </li>
                         <li>
-                            Conducted <span className="text-brand-pink">thorough code reviews</span> to identify potential areas for improvement, ultimately enhancing
-                            code quality across all projects handled by the team.
+                            Conducted <span className="text-brand-pink">code reviews</span>, resulting in a 40% improvement in code quality metrics and
+                            a 25% decrease in post-release defects.
+                        </li>
+                        <li>
+                            <span className="text-brand-pink">Streamlined deployment process</span>, reducing deployment time by 70%, leading to an
+                            increase in the frequency of software releases, exceeding stakeholder expectations.
                         </li>
                     </ul>
                 </div>

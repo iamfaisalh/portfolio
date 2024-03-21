@@ -1,6 +1,7 @@
 {
-  "short_name": "FizzleDev",
-  "name": "FizzleDev",
+  "short_name": "Faisal Hakimi | Software Engineer",
+  "name": "Faisal Hakimi | Software Engineer",
+  "description": "Portfolio website by Faisal Hakimi, full-stack software engineer based in the San Francisco Bay Area.",
   "icons": [
     {
       "src": "fizzle-logo.ico",
