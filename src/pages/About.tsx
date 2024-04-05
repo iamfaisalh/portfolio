@@ -54,8 +54,9 @@ export default function About() {
             <div className="px-6 pt-6 flex flex-col">
                 <p className="font-semibold text-sm mt-2 mb-1">Overall List of Hard and Soft Skills</p>
                 <p className="text-sm space-y-1">
-                    React, Redux, Python, Django, Node.js, Next.js, TypeScript, JavaScript, MongoDB, Postgres, Tailwind CSS,
-                    Git, GitHub, Java, C programming, C++, Swift, Ruby, Amazon Web Services AWS, OpenAI, Google Cloud Platform GCP,
+                    React, Redux, Python, Django, Node.js, Next.js, Express.js, TypeScript, JavaScript, HTML, CSS, SQL, MongoDB, Postgres, Tailwind CSS,
+                    Git, GitHub, Java, C programming, C++, Swift, Ruby, Amazon Web Services AWS EC2 and S3, OpenAI, Google Cloud Platform GCP, Figma, Stripe API, REST API,
+                    Nginx, Docker, Kubernetes, VS Code, Xcode, PyCharm, IntelliJ, Terminal CLI,
                     Communication, Collaboration, Problem-solving, Adaptability, Time Management, Leadership, Creativity,
                     Client Management, Attention to Detail, Conflict Resolution.
                 </p>
@@ -63,9 +64,9 @@ export default function About() {
             <Divider id={"about-experience"} label={"Experience"} labelSize={"text-lg"} className={"px-6"} />
             <div className="px-6 flex flex-col">
                 <div className="flex flex-col">
-                    <p className="text-lg font-bold">Software Engineer, Full Stack</p>
+                    <p className="text-lg font-bold">Lead Full Stack Software Engineer</p>
                     <p className="font-semibold text-sm">Puzzl | San Francisco, California</p>
-                    <p className="font-semibold text-sm">2021 - 2024</p>
+                    <p className="font-semibold text-sm">Jun 2021 - Feb 2024</p>
                     <p className="font-semibold text-sm mt-2 mb-1">Relevant Skills</p>
                     <p className="text-sm space-y-1">
                         Python, Django, Node.js, React, Redux, TypeScript, JavaScript, MongoDB, AWS, GCP, Git, GitHub,
@@ -74,27 +75,60 @@ export default function About() {
                     <p className="font-semibold text-sm mt-2 mb-1">Key Responsibilities</p>
                     <ul className="text-sm list-disc pl-4 space-y-1">
                         <li>
-                            Developed robust web applications using <span className="text-brand-pink">modern front-end frameworks</span> adhering
-                            to <span className="text-brand-pink">UI/UX design principles</span>, increasing user engagement by 30%.
+                            Developed robust web applications using a modern front-end framework, <span className="text-brand-pink">React</span>, resulting in 30% increase in
+                            user engagement.
                         </li>
                         <li>
-                            Implemented a <span className="text-brand-pink">scalable back-end microservices architecture and REST API</span>,
-                            enabling the system to handle a 3x increase in user traffic without any downtime.
+                            Implemented back end microservices architecture using <span className="text-brand-pink">Django and Node.js</span>, enabling the system to handle a 3x
+                            increase in user traffic without any downtime.
                         </li>
                         <li>
-                            Authored a comprehensive technical documentation, reducing onboarding time for new developers by 20%.
+                            Orchestrated a team of engineers and conducted code reviews, which led to 25% decrease in post-release defects.
                         </li>
                         <li>
-                            Applied <span className="text-brand-pink">automated testing procedures</span>, reducing the number of bugs by 60% improving
-                            overall software reliability, and saving approximately 20 hours per week in testing cycles.
+                            Oversaw application of comprehensive technical documentation by utilizing industry-standard tools and methods,
+                            resulting in 40% increase in overall software reliability and reducing onboarding time for new developers.
                         </li>
                         <li>
-                            Conducted <span className="text-brand-pink">code reviews</span>, resulting in a 40% improvement in code quality metrics and
-                            a 25% decrease in post-release defects.
+                            Applied automated testing procedures, cutting the number of bugs by 60% and saving approximately 20 hours per week in testing cycles.
                         </li>
                         <li>
-                            <span className="text-brand-pink">Streamlined deployment process</span>, reducing deployment time by 70%, leading to an
-                            increase in the frequency of software releases, exceeding stakeholder expectations.
+                            Produced a chat system using <span className="text-brand-pink">OpenAI Assistants API</span>, configured to handle healthcare related questions.
+                        </li>
+                        <li>
+                            Integrated <span className="text-brand-pink">Stripe API</span> to handle subscription payments and invoicing, providing a monthly company revenue.
+                        </li>
+                        <li>
+                            Generated custom invoices with the <span className="text-brand-pink">Adobe PDF services Node SDK</span> for businesses to organize clients.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div className="px-6 flex flex-col mt-4">
+                <div className="flex flex-col">
+                    <p className="text-lg font-bold">Software Developer Intern</p>
+                    <p className="font-semibold text-sm">MarketFly (now called Puzzl) | Cerritos, California (Remote)</p>
+                    <p className="font-semibold text-sm">Jan 2021 - Jun 2021</p>
+                    <p className="font-semibold text-sm mt-2 mb-1">Relevant Skills</p>
+                    <p className="text-sm space-y-1">
+                        Node.js, Express.js, React, Redux, JavaScript, MongoDB, AWS, Git, GitHub,
+                        Figma, Social APIs (Facebook, Twitter, Instagram, and Slack).
+                    </p>
+                    <p className="font-semibold text-sm mt-2 mb-1">Key Responsibilities</p>
+                    <ul className="text-sm list-disc pl-4 space-y-1">
+                        <li>
+                            Constructed a <span className="text-brand-pink">REST API</span> and integrated APIs with
+                            <span className="text-brand-pink"> Express.js</span> such as Facebook, Twitter, Instagram, and Slack.
+                        </li>
+                        <li>
+                            Formulated complex database schemas with <span className="text-brand-pink">MongoDB</span>, optimizing query performance and ensuring scalability.
+                        </li>
+                        <li>
+                            Collaborated with designers to convert <span className="text-brand-pink">Figma wireframes into React code</span>, reducing development time by 10%.
+                        </li>
+                        <li>
+                            Auto-generated images of social media visuals and ecommerce banners with Bannerbear API for users to help
+                            with their marketing, and saved them in an <span className="text-brand-pink">Amazon S3</span> bucket.
                         </li>
                     </ul>
                 </div>
@@ -108,7 +142,8 @@ export default function About() {
                     <p className="font-semibold text-sm mt-2 mb-1">Relevant Courses</p>
                     <p className="text-sm space-y-1">
                         Software Engineering, Artificial Intelligence, Analysis of Algorithms, Operating System Principles, Databases,
-                        Multimedia Systems, Internet Application Design and Development, Programming Paradigms and Languages.
+                        Multimedia Systems, Internet Application Design and Development, Object-oriented Programming (OOP),
+                        Data Structures and Algorithms, Programming Paradigms and Languages.
                     </p>
                     <p className="font-semibold text-sm mt-2 mb-1">Key Projects</p>
                     <ul className="text-sm list-disc pl-4 space-y-1">
