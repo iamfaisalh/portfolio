@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import PRJ_Uno from "../assets/FH-PRJ-Uno.png";
-import PRJ_Fizzles_World from "../assets/FH-PRJ-Fizzles-World.png";
+// import PRJ_Fizzles_World from "../assets/FH-PRJ-Fizzles-World.png";
 import PRJ_Shop from "../assets/FH-PRJ-Shop.png";
 import PRJ_Portfolio from "../assets/FH-PRJ-Portfolio.png";
 import PRJ_Picture_Detector from "../assets/FH-PRJ-PictureDetector.png";
@@ -138,28 +138,7 @@ const PROJECTS: Array<ProjectProps> = [
       "Web application for the card game, UNO. Some features include accounts, game lobbies, game chat, and leaderboards. TODO: Mobile responsive.",
     skills: "Node/Express.js, PostgreSQL, AWS S3",
     github_url: "https://github.com/iamfaisalh/term-project-uno-forked",
-    live_url: "https://uno.fizzle.dev/",
-  },
-  {
-    key: "project-portfolio",
-    is_coming_soon: false,
-    src: PRJ_Portfolio,
-    title: "My Portfolio",
-    description:
-      "This current web application which I built to showcase my skills, experience, education, and projects.",
-    skills: "React, TypeScript, Tailwind CSS",
-    github_url: "https://github.com/iamfaisalh/portfolio",
-    live_url: "",
-  },
-  {
-    key: "project-fizzles-world",
-    is_coming_soon: true,
-    src: PRJ_Fizzles_World,
-    title: "Fizzle's World",
-    description:
-      "Web application for an immersive 3D experience in a world of endless adventure. A peaceful world to enjoy where nothing else matters.",
-    skills: "React, Three.js, React Three Fiber",
-    github_url: "",
+    // live_url: "https://uno.fizzle.dev/",
     live_url: "",
   },
   {
@@ -173,6 +152,28 @@ const PROJECTS: Array<ProjectProps> = [
     github_url: "",
     live_url: "",
   },
+  {
+    key: "project-portfolio",
+    is_coming_soon: false,
+    src: PRJ_Portfolio,
+    title: "My Portfolio",
+    description:
+      "This current web application which I built to showcase my skills, experience, education, and projects.",
+    skills: "React, TypeScript, Tailwind CSS",
+    github_url: "https://github.com/iamfaisalh/portfolio",
+    live_url: "",
+  },
+  //   {
+  //     key: "project-fizzles-world",
+  //     is_coming_soon: true,
+  //     src: PRJ_Fizzles_World,
+  //     title: "Fizzle's World",
+  //     description:
+  //       "Web application for an immersive 3D experience in a world of endless adventure. A peaceful world to enjoy where nothing else matters.",
+  //     skills: "React, Three.js, React Three Fiber",
+  //     github_url: "",
+  //     live_url: "",
+  //   },
   {
     key: "project-picture-detector",
     is_coming_soon: false,
