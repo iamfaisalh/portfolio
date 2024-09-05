@@ -78,7 +78,7 @@ export default function About() {
           gym, watch sports, play Call of Duty, work on cars, and I love animals
           (especially cats).
         </p>
-        <Button onClick={downloadFile}>Download Resume</Button>
+        <Button variant="Secondary" onClick={downloadFile}>Download Resume</Button>
       </div>
       <Divider
         id={"about-skills"}

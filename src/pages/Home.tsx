@@ -1,6 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Button from "../components/Button";
 import { Link } from "react-router-dom";
+import { FizzleLogoTransparent } from "../components/Icon";
+import gsap from "gsap";
 
 export default function Home() {
   const [h2Appear, setH2Appear] = useState<boolean>(false);
@@ -25,11 +27,43 @@ export default function Home() {
     }, 4000);
   }, []);
 
+  const logoRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (logoRef.current) {
+      gsap.to(logoRef.current, {
+        rotationY: 360,
+        rotationX: 360,
+        duration: 10, // Duration of one complete rotation cycle
+        ease: "linear",
+        repeat: -1, // Loop the animation forever
+      });
+    }
+  }, []);
+
   return (
     <div
       style={{ marginTop: "-50px", minHeight: "100px" }}
-      className="m-auto w-full h-full flex flex-col pt-10 justify-center items-center tracking-wider text-base md:text-3xl text-center"
+      className="m-auto w-full h-full flex flex-col pt-10 justify-center items-center tracking-wider text-base md:text-3xl text-center relative"
     >
+      <div
+        ref={logoRef}
+        className="absolute -z-0 opacity-70"
+        style={{
+          width: "100%",
+          height: "100%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          perspective: "1000px",
+        }}
+      >
+        <FizzleLogoTransparent
+          width={"100%"}
+          height={"100%"}
+          style={{ transformStyle: "preserve-3d", willChange: "transform" }}
+        />
+      </div>
       <span id="home-heading-1" className="typing-header typing-header-1">
         Hello, my name is{" "}
         <span className="bg-[length:200%_auto] bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.brand.pink),theme(colors.brand.lavender),theme(colors.brand.pink),theme(colors.brand.purple),theme(colors.brand.pink),theme(colors.brand.lavender),theme(colors.brand.pink))] animate-gradient">
@@ -45,7 +79,7 @@ export default function Home() {
       {btnAppear ? (
         <Link to={"/about"}>
           <Button
-            variant={"Primary"}
+            variant={"Secondary"}
             className={"w-fit inline-flex items-center my-4 fade-in"}
           >
             Who is Faisal Hakimi?
