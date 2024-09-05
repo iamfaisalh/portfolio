@@ -129,7 +129,7 @@ export default function About() {
         <p className="text-sm space-y-1">
           Amazon Web Services (AWS), Google Cloud Platform (GCP), Nginx, Git,
           GitHub, Docker, Kubernetes, VS Code, Xcode, PyCharm, IntelliJ, Figma,
-          WebSocket, Vercel
+          WebSocket, Vercel, LLMs (OpenAI)
         </p>
       </div>
       <div className="px-6 flex flex-col">
