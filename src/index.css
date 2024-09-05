@@ -58,8 +58,8 @@ code {
 }
 
 .typing-header {
-  -webkit-animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  -webkit-animation: typing 1s steps(22), blink .5s step-end infinite alternate;
+  animation: typing 1s steps(22), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid;
