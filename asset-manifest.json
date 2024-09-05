@@ -1,23 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.a37a07f6.css",
-    "main.js": "/static/js/main.301157e9.js",
-    "static/js/455.8230d045.chunk.js": "/static/js/455.8230d045.chunk.js",
-    "static/js/23.8edf19d4.chunk.js": "/static/js/23.8edf19d4.chunk.js",
+    "main.css": "/static/css/main.8a94279e.css",
+    "main.js": "/static/js/main.cf9f34be.js",
+    "static/js/214.53025fe6.chunk.js": "/static/js/214.53025fe6.chunk.js",
+    "static/js/455.f9f178d3.chunk.js": "/static/js/455.f9f178d3.chunk.js",
+    "static/js/23.58ff2723.chunk.js": "/static/js/23.58ff2723.chunk.js",
     "static/js/80.476b19a0.chunk.js": "/static/js/80.476b19a0.chunk.js",
     "static/js/488.878b45c2.chunk.js": "/static/js/488.878b45c2.chunk.js",
     "static/js/206.4644f2ac.chunk.js": "/static/js/206.4644f2ac.chunk.js",
+    "static/js/903.1f6f451f.chunk.js": "/static/js/903.1f6f451f.chunk.js",
     "static/media/FH-PRJ-Shop.png": "/static/media/FH-PRJ-Shop.1408065df8d249f7aa32.png",
     "static/media/FH-PRJ-Uno.png": "/static/media/FH-PRJ-Uno.37c2f85f04b47f414932.png",
     "static/media/FH-PRJ-EstimateBuilder.png": "/static/media/FH-PRJ-EstimateBuilder.6d383a476d799864dea3.png",
     "static/media/FH-PRJ-PictureDetector.png": "/static/media/FH-PRJ-PictureDetector.6aabfdca967bdaf4ef73.png",
     "static/media/FH-PFP.jpg": "/static/media/FH-PFP.ebd83860f6b11d3de819.jpg",
+    "static/media/FH-BG-500.jpeg": "/static/media/FH-BG-500.ac0a5a294aff825e8254.jpeg",
+    "static/media/FH-BG-404.jpeg": "/static/media/FH-BG-404.60f75b2365159233d70f.jpeg",
     "static/media/FH-PRJ-Portfolio.png": "/static/media/FH-PRJ-Portfolio.19bcf55bac402c98b6f8.png",
     "static/media/FH-PRJ-Concentration.png": "/static/media/FH-PRJ-Concentration.6ca1ed1b4d0ba45f8b26.png",
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.a37a07f6.css",
-    "static/js/main.301157e9.js"
+    "static/css/main.8a94279e.css",
+    "static/js/main.cf9f34be.js"
   ]
 }
