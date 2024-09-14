@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { GitHubIcon, GmailIcon, LinkedInIcon } from "../components/Icon";
+import { Tooltip } from "react-tooltip";
 // import Button from "../components/Button";
 // import Field from "../components/Field";
 // import Alert from "../components/Alert";
@@ -26,7 +27,7 @@ export default function Contact() {
 
   useEffect(() => {
     try {
-      document.title = "Contact | Faisal Hakimi";
+      document.title = "Faisal Hakimi | Contact";
       const layout = document.getElementById("layout-content");
       if (layout) layout.scrollTop = 0;
     } catch (error) {}
@@ -36,6 +37,8 @@ export default function Contact() {
     <div className="px-6 py-6 h-full">
       <div className="flex items-center justify-center gap-6 max-w-xl m-auto h-full">
         <a
+          data-tooltip-id="tooltip-linkedin"
+          data-tooltip-content="LinkedIn"
           href="https://www.linkedin.com/in/faisal-hakimi"
           target="_blank"
           rel="noreferrer"
@@ -43,6 +46,8 @@ export default function Contact() {
           <LinkedInIcon className="fill-white slide-in-left" />
         </a>
         <a
+          data-tooltip-id="tooltip-github"
+          data-tooltip-content="GitHub"
           href="https://github.com/iamfaisalh"
           target="_blank"
           rel="noreferrer"
@@ -50,6 +55,8 @@ export default function Contact() {
           <GitHubIcon className="fill-white slide-in-top" />
         </a>
         <a
+          data-tooltip-id="tooltip-email"
+          data-tooltip-content="Email"
           href="mailto:faisalhakimi101@gmail.com"
           target="_blank"
           rel="noreferrer"
@@ -57,6 +64,9 @@ export default function Contact() {
           <GmailIcon className="fill-white slide-in-right" />
         </a>
       </div>
+      <Tooltip id="tooltip-linkedin" />
+      <Tooltip id="tooltip-github" />
+      <Tooltip id="tooltip-email" />
     </div>
   );
 

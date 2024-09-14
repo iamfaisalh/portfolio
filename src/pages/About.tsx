@@ -9,7 +9,7 @@ export default function About() {
 
   useEffect(() => {
     try {
-      document.title = "About | Faisal Hakimi";
+      document.title = "Faisal Hakimi | About";
       const layout = document.getElementById("layout-content");
       if (layout) layout.scrollTop = 0;
     } catch (error) {}
@@ -74,11 +74,13 @@ export default function About() {
           acquisition.
           <br></br>
           <br></br>
-          Aside from coding, I like to explore nature, try new foods, go to the
-          gym, watch sports, play Call of Duty, work on cars, and I love animals
-          (especially cats).
+          Aside from coding, I like to explore nature, take pictures, try new
+          foods, lift weights, watch sports, play Call of Duty, work on cars,
+          and I love animals (especially cats).
         </p>
-        <Button variant="Secondary" onClick={downloadFile}>Download Resume</Button>
+        <Button variant="Secondary" onClick={downloadFile}>
+          Download Resume
+        </Button>
       </div>
       <Divider
         id={"about-skills"}

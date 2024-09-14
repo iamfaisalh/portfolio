@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import PRJ_Uno from "../assets/FH-PRJ-Uno.png";
-// import PRJ_Fizzles_World from "../assets/FH-PRJ-Fizzles-World.png";
-import PRJ_Shop from "../assets/FH-PRJ-Shop.png";
+import PRJ_ChoiceHub from "../assets/FH-PRJ-ChoiceHub.png";
+import PRJ_Streamify from "../assets/FH-PRJ-Streamify.png";
 import PRJ_Portfolio from "../assets/FH-PRJ-Portfolio.png";
 import PRJ_Picture_Detector from "../assets/FH-PRJ-PictureDetector.png";
 import PRJ_Concentration from "../assets/FH-PRJ-Concentration.png";
@@ -66,6 +66,31 @@ function Project({ project }: { project: ProjectProps }) {
               href={project.github_url}
               rel="noreferrer"
               target="_blank"
+              className="inline-flex items-center border-b-2 border-transparent text-brand-pink hover:border-brand-pink text-sm font-medium text-center ml-auto pb-1"
+            >
+              View Code
+              <svg
+                className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          ) : null}
+          {/* {project.github_url ? (
+            <a
+              href={project.github_url}
+              rel="noreferrer"
+              target="_blank"
               className="inline-flex items-center px-3 py-2 text-sm font-medium text-center bg-brand-pink rounded-lg hover:bg-opacity-90 hover:bg-brand-pink focus:ring-4 focus:outline-none focus:ring-brand-pink"
             >
               View Code
@@ -110,7 +135,7 @@ function Project({ project }: { project: ProjectProps }) {
                 />
               </svg>
             </a>
-          ) : null}
+          ) : null} */}
         </div>
       </div>
     </div>
@@ -118,6 +143,30 @@ function Project({ project }: { project: ProjectProps }) {
 }
 
 const PROJECTS: Array<ProjectProps> = [
+  {
+    key: "project-streamify",
+    is_coming_soon: true,
+    src: PRJ_Streamify,
+    title: "Streamify",
+    description:
+      "Full stack application for connecting your Spotify account and displaying data and analytics on the dashboard. Possibly planning to add cool features by integrating OpenAI.",
+    skills:
+      "React, TypeScript, Material UI, Node/Express.js, Spotify API, Google Cloud Platform (Cloud Run, Firestore), OpenAI",
+    github_url: "https://github.com/iamfaisalh/streamify",
+    live_url: "",
+  },
+  {
+    key: "project-choicehub",
+    is_coming_soon: true,
+    src: PRJ_ChoiceHub,
+    title: "ChoiceHub",
+    description:
+      "A platform where friends can vote on various types of nearby places, from dining options to other locations of interest. Users select categories, cast their votes, and view real-time results, making group decisions easy and enjoyable.",
+    skills:
+      "Next.js, Tailwind CSS, Vercel, Google Maps Platform, Supabase (PostgreSQL), WebSocket",
+    github_url: "https://github.com/iamfaisalh/choicehub",
+    live_url: "",
+  },
   {
     key: "project-estimate-builder",
     is_coming_soon: false,
@@ -136,20 +185,8 @@ const PROJECTS: Array<ProjectProps> = [
     title: "UNO",
     description:
       "Web application for the card game, UNO. Some features include accounts, game lobbies, game chat, and leaderboards. TODO: Mobile responsive.",
-    skills: "Node/Express.js, PostgreSQL, AWS S3",
+    skills: "Node/Express.js, Handlebars, PostgreSQL, AWS S3",
     github_url: "https://github.com/iamfaisalh/term-project-uno-forked",
-    // live_url: "https://uno.fizzle.dev/",
-    live_url: "",
-  },
-  {
-    key: "project-shop",
-    is_coming_soon: true,
-    src: PRJ_Shop,
-    title: "Shop",
-    description:
-      "Web application for E-Commerce. Vendors can list products for sale. Customers can add items to their cart and complete a checkout session.",
-    skills: "Python, Django, MongoDB, Stripe API",
-    github_url: "",
     live_url: "",
   },
   {
@@ -163,17 +200,6 @@ const PROJECTS: Array<ProjectProps> = [
     github_url: "https://github.com/iamfaisalh/portfolio",
     live_url: "",
   },
-  //   {
-  //     key: "project-fizzles-world",
-  //     is_coming_soon: true,
-  //     src: PRJ_Fizzles_World,
-  //     title: "Fizzle's World",
-  //     description:
-  //       "Web application for an immersive 3D experience in a world of endless adventure. A peaceful world to enjoy where nothing else matters.",
-  //     skills: "React, Three.js, React Three Fiber",
-  //     github_url: "",
-  //     live_url: "",
-  //   },
   {
     key: "project-picture-detector",
     is_coming_soon: false,
@@ -201,7 +227,7 @@ const PROJECTS: Array<ProjectProps> = [
 export default function Projects() {
   useEffect(() => {
     try {
-      document.title = "Projects | Faisal Hakimi";
+      document.title = "Faisal Hakimi | Projects";
       const layout = document.getElementById("layout-content");
       if (layout) layout.scrollTop = 0;
     } catch (error) {}
@@ -209,8 +235,10 @@ export default function Projects() {
 
   return (
     <div
-      style={{ minHeight: "calc(100vh - 90px)" }}
-      className="px-6 py-6 flex flex-wrap items-start justify-evenly gap-8"
+      style={{
+        minHeight: "calc(100vh - 90px)",
+      }}
+      className="px-6 py-6 flex flex-wrap items-start justify-evenly gap-8 max-w-7xl mx-auto"
     >
       {PROJECTS.map((p, i) => (
         <Project key={p.key} project={p} />
