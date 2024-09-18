@@ -149,9 +149,9 @@ const PROJECTS: Array<ProjectProps> = [
     src: PRJ_Streamify,
     title: "Streamify",
     description:
-      "Full stack application for connecting your Spotify account and displaying data and analytics on the dashboard. Possibly planning to add cool features by integrating OpenAI.",
+      "Full stack application for connecting your Spotify account and displaying data and analytics on the dashboard.",
     skills:
-      "React, TypeScript, Material UI, Node/Express.js, Spotify API, Google Cloud Platform (Cloud Run, Firestore), OpenAI",
+      "React, TypeScript, Material UI, Node/Express.js, Spotify API, Google Cloud Platform (Cloud Run, Firestore)",
     github_url: "https://github.com/iamfaisalh/streamify",
     live_url: "",
   },
@@ -163,7 +163,7 @@ const PROJECTS: Array<ProjectProps> = [
     description:
       "A platform where friends can vote on various types of nearby places, from dining options to other locations of interest. Users select categories, cast their votes, and view real-time results, making group decisions easy and enjoyable.",
     skills:
-      "Next.js, Tailwind CSS, Vercel, Google Maps Platform, Supabase (PostgreSQL), WebSocket",
+      "Next.js, Tailwind CSS, Vercel, Google Maps Platform, Supabase, GitHub Actions",
     github_url: "https://github.com/iamfaisalh/choicehub",
     live_url: "",
   },

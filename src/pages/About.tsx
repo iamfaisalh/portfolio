@@ -112,26 +112,30 @@ export default function About() {
         </p>
       </div>
       <div className="px-6 flex flex-col">
-        <p className="font-semibold text-sm mt-2 mb-1">
-          Frameworks / Libraries
-        </p>
+        <p className="font-semibold text-sm mt-2 mb-1">Frameworks/Libraries</p>
         <p className="text-sm space-y-1">
           React, Redux, Next.js, Express.js, Django, Flask, Tailwind CSS,
           Bootstrap, Material UI, Cypress, Jest
         </p>
       </div>
       <div className="px-6 flex flex-col">
-        <p className="font-semibold text-sm mt-2 mb-1">Database</p>
+        <p className="font-semibold text-sm mt-2 mb-1">Databases</p>
         <p className="text-sm space-y-1">
-          MongoDB, PostgreSQL (Postgres), MySQL, Firebase, Firestore
+          PostgreSQL (Postgres), Supabase, MySQL, MongoDB, Firebase, Firestore
         </p>
       </div>
       <div className="px-6 flex flex-col">
-        <p className="font-semibold text-sm mt-2 mb-1">Other Tools</p>
+        <p className="font-semibold text-sm mt-2 mb-1">Tools/Platforms</p>
         <p className="text-sm space-y-1">
           Amazon Web Services (AWS), Google Cloud Platform (GCP), Nginx, Git,
           GitHub, Docker, Kubernetes, VS Code, Xcode, PyCharm, IntelliJ, Figma,
-          WebSocket, Vercel, LLMs (OpenAI)
+          WebSocket, Vercel, LLM (OpenAI)
+        </p>
+      </div>
+      <div className="px-6 flex flex-col">
+        <p className="font-semibold text-sm mt-2 mb-1">Methodologies</p>
+        <p className="text-sm space-y-1">
+          Agile, Scrum, Test-Driven Development (TDD)
         </p>
       </div>
       <div className="px-6 flex flex-col">
