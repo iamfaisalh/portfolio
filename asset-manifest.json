@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.bd2280b0.css",
-    "main.js": "/static/js/main.37646997.js",
+    "main.js": "/static/js/main.e71f6395.js",
     "static/js/214.53025fe6.chunk.js": "/static/js/214.53025fe6.chunk.js",
     "static/js/455.f9f178d3.chunk.js": "/static/js/455.f9f178d3.chunk.js",
     "static/js/23.ca042869.chunk.js": "/static/js/23.ca042869.chunk.js",
-    "static/js/820.0258f01d.chunk.js": "/static/js/820.0258f01d.chunk.js",
+    "static/js/820.616a268e.chunk.js": "/static/js/820.616a268e.chunk.js",
     "static/js/488.16ee055b.chunk.js": "/static/js/488.16ee055b.chunk.js",
     "static/js/206.4644f2ac.chunk.js": "/static/js/206.4644f2ac.chunk.js",
     "static/js/823.dea52205.chunk.js": "/static/js/823.dea52205.chunk.js",
@@ -18,12 +18,12 @@
     "static/media/FH-BG-500.jpeg": "/static/media/FH-BG-500.ac0a5a294aff825e8254.jpeg",
     "static/media/FH-BG-404.jpeg": "/static/media/FH-BG-404.60f75b2365159233d70f.jpeg",
     "static/media/FH-PRJ-Concentration.png": "/static/media/FH-PRJ-Concentration.6ca1ed1b4d0ba45f8b26.png",
-    "static/media/FH-PRJ-Streamify.png": "/static/media/FH-PRJ-Streamify.ed4f5542783e432d9127.png",
     "static/media/FH-PRJ-ChoiceHub.png": "/static/media/FH-PRJ-ChoiceHub.b8aeb5adc599d64f7eea.png",
+    "static/media/FH-PRJ-Streamify.png": "/static/media/FH-PRJ-Streamify.483b53e5de7061cc3df0.png",
     "index.html": "/index.html"
   },
   "entrypoints": [
     "static/css/main.bd2280b0.css",
-    "static/js/main.37646997.js"
+    "static/js/main.e71f6395.js"
   ]
 }
