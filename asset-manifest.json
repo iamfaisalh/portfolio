@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.bd2280b0.css",
-    "main.js": "/static/js/main.e71f6395.js",
+    "main.js": "/static/js/main.545adf0e.js",
     "static/js/214.53025fe6.chunk.js": "/static/js/214.53025fe6.chunk.js",
     "static/js/455.f9f178d3.chunk.js": "/static/js/455.f9f178d3.chunk.js",
-    "static/js/23.ca042869.chunk.js": "/static/js/23.ca042869.chunk.js",
-    "static/js/820.616a268e.chunk.js": "/static/js/820.616a268e.chunk.js",
+    "static/js/23.c81cff93.chunk.js": "/static/js/23.c81cff93.chunk.js",
+    "static/js/9.8c3a11db.chunk.js": "/static/js/9.8c3a11db.chunk.js",
     "static/js/488.16ee055b.chunk.js": "/static/js/488.16ee055b.chunk.js",
     "static/js/206.4644f2ac.chunk.js": "/static/js/206.4644f2ac.chunk.js",
     "static/js/823.dea52205.chunk.js": "/static/js/823.dea52205.chunk.js",
     "static/js/903.1f6f451f.chunk.js": "/static/js/903.1f6f451f.chunk.js",
+    "static/media/FH-PRJ-FinancialApp.png": "/static/media/FH-PRJ-FinancialApp.c38989a8c5d5a01eb10e.png",
     "static/media/FH-PRJ-Uno.png": "/static/media/FH-PRJ-Uno.37c2f85f04b47f414932.png",
     "static/media/FH-PRJ-EstimateBuilder.png": "/static/media/FH-PRJ-EstimateBuilder.6d383a476d799864dea3.png",
     "static/media/FH-PRJ-PictureDetector.png": "/static/media/FH-PRJ-PictureDetector.6aabfdca967bdaf4ef73.png",
@@ -24,6 +25,6 @@
   },
   "entrypoints": [
     "static/css/main.bd2280b0.css",
-    "static/js/main.e71f6395.js"
+    "static/js/main.545adf0e.js"
   ]
 }
