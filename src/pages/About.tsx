@@ -170,7 +170,6 @@ export default function About() {
             <li>
               Built and deployed multiple personal projects to enhance expertise
               in modern web technologies, such as Next.js, Python, and Flask.
-              (See portfolio website for more).
             </li>
             <li>
               Improved prompt engineering skills with the OpenAI API, optimizing
