@@ -6,6 +6,7 @@ import PRJ_Portfolio from "../assets/FH-PRJ-Portfolio.png";
 import PRJ_Picture_Detector from "../assets/FH-PRJ-PictureDetector.png";
 import PRJ_Concentration from "../assets/FH-PRJ-Concentration.png";
 import PRJ_EstimateBuilder from "../assets/FH-PRJ-EstimateBuilder.png";
+import PRJ_FinancialApp from "../assets/FH-PRJ-FinancialApp.png";
 
 interface ProjectProps {
   key: string;
@@ -144,15 +145,15 @@ function Project({ project }: { project: ProjectProps }) {
 
 const PROJECTS: Array<ProjectProps> = [
   {
-    key: "project-streamify",
-    is_coming_soon: true,
-    src: PRJ_Streamify,
-    title: "Streamify",
+    key: "project-financial-app",
+    is_coming_soon: false,
+    src: PRJ_FinancialApp,
+    title: "Financial App",
     description:
-      "Full stack application for connecting your Spotify account and displaying data and analytics on the dashboard.",
+      "An application to buy and sell stocks with the ability to search stocks, see live data with an interactive chart, and also analyze your portfolio using AI.",
     skills:
-      "React, TypeScript, Material UI, Node/Express.js, Spotify API, Google Cloud Platform (Cloud Run, Firestore)",
-    github_url: "https://github.com/iamfaisalh/streamify",
+      "Python, Flask, React, TypeScript, Tailwind CSS, OpenAI, PostgreSQL, yFinance, Highcharts",
+    github_url: "https://github.com/iamfaisalh/financial-app",
     live_url: "",
   },
   {
@@ -165,6 +166,18 @@ const PROJECTS: Array<ProjectProps> = [
     skills:
       "Next.js, Tailwind CSS, Vercel, Google Maps Platform, Supabase, GitHub Actions",
     github_url: "https://github.com/iamfaisalh/choicehub",
+    live_url: "",
+  },
+  {
+    key: "project-streamify",
+    is_coming_soon: true,
+    src: PRJ_Streamify,
+    title: "Streamify",
+    description:
+      "Full stack application for connecting your Spotify account and displaying data and analytics on the dashboard.",
+    skills:
+      "React, TypeScript, Material UI, Node/Express.js, Spotify API, Google Cloud Platform (Cloud Run, Firestore)",
+    github_url: "https://github.com/iamfaisalh/streamify",
     live_url: "",
   },
   {

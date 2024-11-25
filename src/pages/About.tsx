@@ -135,7 +135,8 @@ export default function About() {
       <div className="px-6 flex flex-col">
         <p className="font-semibold text-sm mt-2 mb-1">Methodologies</p>
         <p className="text-sm space-y-1">
-          Agile, Scrum, Test-Driven Development (TDD)
+          Agile, Scrum, Test-Driven Development (TDD), Single Page Application
+          (SPA)
         </p>
       </div>
       <div className="px-6 flex flex-col">
@@ -154,6 +155,32 @@ export default function About() {
       />
       <div className="px-6 flex flex-col">
         <div className="flex flex-col">
+          <p className="text-lg font-bold">Freelance Software Engineer </p>
+          <p className="font-semibold text-sm">
+            Self-employed | San Francisco, California
+          </p>
+          <p className="font-semibold text-sm">Feb 2024 - Present</p>
+          <ul className="text-sm list-disc pl-4 space-y-1 mt-2">
+            <li>
+              Developed software for a local nonprofit organization to
+              streamline financial workflows, including payment handling for
+              memberships and donations, reducing manual effort and improving
+              efficiency.
+            </li>
+            <li>
+              Built and deployed multiple personal projects to enhance expertise
+              in modern web technologies, such as Next.js, Python, and Flask.
+              (See portfolio website for more).
+            </li>
+            <li>
+              Improved prompt engineering skills with the OpenAI API, optimizing
+              models for accurate and context-aware responses.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="px-6 flex flex-col mt-4">
+        <div className="flex flex-col">
           <p className="text-lg font-bold">Lead Full Stack Software Engineer</p>
           <p className="font-semibold text-sm">
             Dart Health (Puzzl Inc) | San Francisco, California
@@ -167,43 +194,29 @@ export default function About() {
           </p>
           <ul className="text-sm list-disc pl-4 space-y-1">
             <li>
-              Tailored a healthcare compliance chatbot with{" "}
-              <span className="text-brand-pink">OpenAI Assistants API</span>,
-              reducing user questions to the cofounders by 40% and easing their
-              workload.{" "}
-              <span className="text-brand-pink">
-                (Node.js, Express.js, TypeScript)
-              </span>
-              .
+              Tailored a healthcare compliance chatbot with OpenAI Assistants
+              API, reducing user questions to the cofounders by 40% and easing
+              their workload. (Node.js, Express.js, TypeScript).
             </li>
             <li>
               Implemented automated unit testing and end-to-end testing with
-              <span className="text-brand-pink"> Jest</span> (backend) and
-              <span className="text-brand-pink"> Cypress</span> (frontend),
-              significantly reducing bugs and saving 15-20 hours per week in
-              testing cycles.
+              Jest (backend) and Cypress (frontend), significantly reducing bugs
+              and saving 15-20 hours per week in testing cycles.
             </li>
             <li>
-              Integrated <span className="text-brand-pink">Stripe Connect</span>
-              , boosting transaction efficiency and driving increased revenue.{" "}
-              <span className="text-brand-pink">(B2B and B2C SaaS)</span>.
+              Integrated Stripe Connect, boosting transaction efficiency and
+              driving increased revenue. (B2B and B2C SaaS).
             </li>
             <li>
-              Generated custom invoices with{" "}
-              <span className="text-brand-pink">
-                Adobe PDF Services Node SDK
-              </span>{" "}
-              and integrated QuickBooks, enabling businesses to efficiently
-              track payments and invoicing.
+              Generated custom invoices with Adobe PDF Services Node SDK and
+              integrated QuickBooks, enabling businesses to efficiently track
+              payments and invoicing.
             </li>
             <li>
               Developed a responsive project portal and messaging system,
               streamlining workflow management for businesses. Imagine a
-              combination of Linear and Slack.{" "}
-              <span className="text-brand-pink">
-                (React, TypeScript, Tailwind CSS)
-              </span>
-              .
+              combination of Linear and Slack. (React, TypeScript, Tailwind
+              CSS).
             </li>
           </ul>
         </div>
@@ -221,34 +234,23 @@ export default function About() {
           </p>
           <ul className="text-sm list-disc pl-4 space-y-1">
             <li>
-              Played a key role in the startup's{" "}
-              <span className="text-brand-pink">successful acquisition</span> by
+              Played a key role in the startup's successful acquisition by
               designing a marketing automation feature for users to authenticate
               across Facebook, Instagram, and Twitter to schedule posts, scaling
               platform capabilities.
             </li>
             <li>
-              Constructed a <span className="text-brand-pink">REST API</span>{" "}
-              and integrated{" "}
-              <span className="text-brand-pink">Bannerbear API</span> for social
+              Constructed a REST API and integrated Bannerbear API for social
               media visuals generation, significantly increasing user engagement
-              on the platform.{" "}
-              <span className="text-brand-pink">
-                (Node.js, Express.js, TypeScript)
-              </span>
-              .
+              on the platform. (Node.js, Express.js, TypeScript).
             </li>
             <li>
-              Collaborated with{" "}
-              <span className="text-brand-pink">UI/UX designers</span> to
-              convert <span className="text-brand-pink">Figma</span> wireframes
-              into <span className="text-brand-pink">React</span> code, cutting
-              design and development time by 20%.
+              Collaborated with UI/UX designers to convert Figma wireframes into{" "}
+              React code, cutting design and development time by 20%.
             </li>
             <li>
               Formulated complex database schemas, optimizing query performance
-              and ensuring scalability.{" "}
-              <span className="text-brand-pink">(MongoDB)</span>.
+              and ensuring scalability. (MongoDB).
             </li>
           </ul>
         </div>
@@ -279,58 +281,41 @@ export default function About() {
           <p className="font-semibold text-sm mt-2 mb-1">Key Projects</p>
           <ul className="text-sm list-disc pl-4 space-y-1">
             <li>
-              Used <span className="text-brand-pink">Python</span> and{" "}
-              <span className="text-brand-pink">MATLAB</span> for a multimedia
-              project to determine motion fields using optic flow and Kalman
-              filtering to detect and track zebrafish.
+              Used Python and MATLAB for a multimedia project to determine
+              motion fields using optic flow and Kalman filtering to detect and
+              track zebrafish.
             </li>
             <li>
-              Worked on a Pac-Man game using{" "}
-              <span className="text-brand-pink">Python</span> in an{" "}
-              <span className="text-brand-pink">Artificial Intelligence</span>{" "}
-              course.
+              Worked on a Pac-Man game using Python in an Artificial
+              Intelligence course.
             </li>
             <li>
               Built the game "UNO" on a web application with a team of 4 using
-              the{" "}
-              <span className="text-brand-pink">
-                PERN stack (PostgreSQL, Express, React and Node.js){" "}
-              </span>
-              and deployed on <span className="text-brand-pink">Heroku</span>.
+              the PERN stack (PostgreSQL, Express, React and Node.js) and
+              deployed on Heroku.
             </li>
             <li>
-              Applied{" "}
-              <span className="text-brand-pink">agile methodologies</span> and{" "}
-              <span className="text-brand-pink">scrum framework</span> leading a
-              team of 5. Created a web application for NFTs using the{" "}
-              <span className="text-brand-pink">
-                MERN stack (MongoDB, Express, React, Node.js)
-              </span>{" "}
-              and deployed the app on an{" "}
-              <span className="text-brand-pink">AWS EC2</span> instance.
+              Applied agile methodologies and scrum framework leading a team of
+              5. Created a web application for NFTs using the MERN stack
+              (MongoDB, Express, React, Node.js) and deployed the app on an AWS
+              EC2 instance.
             </li>
             <li>
-              Created a file system with a team of 4 using{" "}
-              <span className="text-brand-pink">C programming language</span> on
-              a Debian VirtualBox, as well as worked with device drivers.
+              Created a file system with a team of 4 using C programming
+              language on a Debian VirtualBox, as well as worked with device
+              drivers.
             </li>
             <li>
               Developed an item listing service similar to craigslist with a
-              fellow student. Used a{" "}
-              <span className="text-brand-pink">Spark server</span> with
-              <span className="text-brand-pink"> Java</span> for the back end,{" "}
-              <span className="text-brand-pink">MongoDB</span> for the database,
-              and <span className="text-brand-pink">React</span> for the front
-              end.
+              fellow student. Used a Spark server with Java for the back end,{" "}
+              MongoDB for the database, and React for the front end.
             </li>
             <li>
               Built a social media platform similar to Instagram with user
               authentication where users can perform actions such as creating,
-              viewing, and commenting on a post. Used{" "}
-              <span className="text-brand-pink">Node.js / Express</span> with{" "}
-              <span className="text-brand-pink">Handlebars</span> as the
-              templating view engine, and{" "}
-              <span className="text-brand-pink">MySQL</span> for the database.
+              viewing, and commenting on a post. Used Node.js / Express with{" "}
+              Handlebars as the templating view engine, and MySQL for the
+              database.
             </li>
           </ul>
         </div>
