@@ -1,30 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.bd2280b0.css",
-    "main.js": "/static/js/main.7dd75cf8.js",
-    "static/js/214.53025fe6.chunk.js": "/static/js/214.53025fe6.chunk.js",
-    "static/js/455.f9f178d3.chunk.js": "/static/js/455.f9f178d3.chunk.js",
-    "static/js/23.72799351.chunk.js": "/static/js/23.72799351.chunk.js",
-    "static/js/9.8c3a11db.chunk.js": "/static/js/9.8c3a11db.chunk.js",
-    "static/js/488.16ee055b.chunk.js": "/static/js/488.16ee055b.chunk.js",
+    "main.css": "/static/css/main.023f278a.css",
+    "main.js": "/static/js/main.8e3391cc.js",
     "static/js/206.4644f2ac.chunk.js": "/static/js/206.4644f2ac.chunk.js",
-    "static/js/823.dea52205.chunk.js": "/static/js/823.dea52205.chunk.js",
-    "static/js/903.1f6f451f.chunk.js": "/static/js/903.1f6f451f.chunk.js",
+    "static/media/FH-PRJ-Portfolio.png": "/static/media/FH-PRJ-Portfolio.cb08ed7c51c9768e06a6.png",
     "static/media/FH-PRJ-FinancialApp.png": "/static/media/FH-PRJ-FinancialApp.c38989a8c5d5a01eb10e.png",
     "static/media/FH-PRJ-Uno.png": "/static/media/FH-PRJ-Uno.37c2f85f04b47f414932.png",
     "static/media/FH-PRJ-EstimateBuilder.png": "/static/media/FH-PRJ-EstimateBuilder.6d383a476d799864dea3.png",
     "static/media/FH-PRJ-PictureDetector.png": "/static/media/FH-PRJ-PictureDetector.6aabfdca967bdaf4ef73.png",
-    "static/media/FH-PRJ-Portfolio.png": "/static/media/FH-PRJ-Portfolio.7b1d748a6e3b806a4ac9.png",
     "static/media/FH-PFP.jpg": "/static/media/FH-PFP.ebd83860f6b11d3de819.jpg",
-    "static/media/FH-BG-500.jpeg": "/static/media/FH-BG-500.ac0a5a294aff825e8254.jpeg",
-    "static/media/FH-BG-404.jpeg": "/static/media/FH-BG-404.60f75b2365159233d70f.jpeg",
     "static/media/FH-PRJ-Concentration.png": "/static/media/FH-PRJ-Concentration.6ca1ed1b4d0ba45f8b26.png",
     "static/media/FH-PRJ-ChoiceHub.png": "/static/media/FH-PRJ-ChoiceHub.b8aeb5adc599d64f7eea.png",
     "static/media/FH-PRJ-Streamify.png": "/static/media/FH-PRJ-Streamify.483b53e5de7061cc3df0.png",
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.bd2280b0.css",
-    "static/js/main.7dd75cf8.js"
+    "static/css/main.023f278a.css",
+    "static/js/main.8e3391cc.js"
   ]
 }
