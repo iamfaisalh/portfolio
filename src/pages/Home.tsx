@@ -1,16 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import Button from "../components/Button";
-import { Link } from "react-router-dom";
 import { FizzleLogoTransparent } from "../components/Icon";
 import gsap from "gsap";
 
 export default function Home() {
   const [h2Appear, setH2Appear] = useState<boolean>(false);
   const [btnAppear, setBtnAppear] = useState<boolean>(false);
-
-  useEffect(() => {
-    document.title = "Faisal Hakimi";
-  }, []);
 
   useEffect(() => {
     setTimeout(() => {
@@ -43,8 +38,8 @@ export default function Home() {
 
   return (
     <div
-      style={{ marginTop: "-50px", minHeight: "100px" }}
-      className="m-auto w-full h-full flex flex-col pt-10 justify-center items-center tracking-wider text-base md:text-3xl text-center relative"
+      style={{ minHeight: "100px" }}
+      className="w-full h-full flex flex-col justify-center items-center tracking-wider text-base md:text-3xl text-center relative"
     >
       <div
         ref={logoRef}
@@ -77,29 +72,31 @@ export default function Home() {
         </span>
       ) : null}
       {btnAppear ? (
-        <Link to={"/about"}>
-          <Button
-            variant={"Secondary"}
-            className={"w-fit inline-flex items-center my-4 fade-in"}
+        <Button
+          variant={"Secondary"}
+          className={"w-fit max-w-fit inline-flex items-center my-4 fade-in"}
+          onClick={() => {
+            const aboutPage = document.getElementById("about-page");
+            if (aboutPage) aboutPage.scrollIntoView({ behavior: "smooth" });
+          }}
+        >
+          Who is Faisal Hakimi?
+          <svg
+            className="rtl:rotate-180 w-3.5 h-3.5 ms-2 rotate-90"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 14 10"
           >
-            Who is Faisal Hakimi?
-            <svg
-              className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 14 10"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M1 5h12m0 0L9 1m4 4L9 9"
-              />
-            </svg>
-          </Button>
-        </Link>
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M1 5h12m0 0L9 1m4 4L9 9"
+            />
+          </svg>
+        </Button>
       ) : null}
     </div>
   );

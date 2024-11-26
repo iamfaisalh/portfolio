@@ -5,7 +5,12 @@
 html {
   color-scheme: dark;
   background: rgb(34, 40, 49);
-  background: linear-gradient(0deg, rgba(34, 40, 49, 1) 50%, rgba(13, 15, 19, 1) 100%);
+  color: #ffffff;
+  background: linear-gradient(
+    0deg,
+    rgba(34, 40, 49, 1) 50%,
+    rgba(13, 15, 19, 1) 100%
+  );
 }
 
 code {
@@ -58,8 +63,8 @@ code {
 }
 
 .typing-header {
-  -webkit-animation: typing 1s steps(22), blink .5s step-end infinite alternate;
-  animation: typing 1s steps(22), blink .5s step-end infinite alternate;
+  -webkit-animation: typing 1s steps(22), blink 0.5s step-end infinite alternate;
+  animation: typing 1s steps(22), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid;
@@ -75,25 +80,25 @@ code {
 
 @-webkit-keyframes typing {
   from {
-    width: 0
+    width: 0;
   }
 }
 
 @-webkit-keyframes blink {
   50% {
-    border-color: transparent
+    border-color: transparent;
   }
 }
 
 @keyframes typing {
   from {
-    width: 0
+    width: 0;
   }
 }
 
 @keyframes blink {
   50% {
-    border-color: transparent
+    border-color: transparent;
   }
 }
 
@@ -281,8 +286,8 @@ textarea {
 }
 
 .text-focus-in {
-  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-  animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 @-webkit-keyframes text-focus-in {
@@ -347,8 +352,9 @@ textarea {
 }
 
 .slide-in-left {
-  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @-webkit-keyframes slide-in-left {
@@ -380,8 +386,9 @@ textarea {
 }
 
 .slide-in-right {
-  -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @-webkit-keyframes slide-in-right {
@@ -413,8 +420,8 @@ textarea {
 }
 
 .slide-in-top {
-  -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 /* ----------------------------------------------
@@ -458,8 +465,8 @@ textarea {
 }
 
 .fade-in {
-  -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-  animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 @-webkit-keyframes fade-in {

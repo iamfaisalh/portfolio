@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import PRJ_Uno from "../assets/FH-PRJ-Uno.png";
 import PRJ_ChoiceHub from "../assets/FH-PRJ-ChoiceHub.png";
 import PRJ_Streamify from "../assets/FH-PRJ-Streamify.png";
@@ -209,7 +208,7 @@ const PROJECTS: Array<ProjectProps> = [
     title: "My Portfolio",
     description:
       "This current web application which I built to showcase my skills, experience, education, and projects.",
-    skills: "React, TypeScript, Tailwind CSS",
+    skills: "React, TypeScript, Tailwind CSS, GSAP",
     github_url: "https://github.com/iamfaisalh/portfolio",
     live_url: "",
   },
@@ -238,14 +237,6 @@ const PROJECTS: Array<ProjectProps> = [
 ];
 
 export default function Projects() {
-  useEffect(() => {
-    try {
-      document.title = "Faisal Hakimi | Projects";
-      const layout = document.getElementById("layout-content");
-      if (layout) layout.scrollTop = 0;
-    } catch (error) {}
-  }, []);
-
   return (
     <div
       style={{

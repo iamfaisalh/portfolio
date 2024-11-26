@@ -1,18 +1,37 @@
-import { useEffect } from "react";
 import SkillRating from "../components/SkillRating";
 import PFP from "../assets/FH-PFP.jpg";
 import Divider from "../components/Divider";
 import Button from "../components/Button";
+import { GitHubIcon, GmailIcon, LinkedInIcon } from "../components/Icon";
+import { Tooltip } from "react-tooltip";
+import { useEffect, useRef, useState } from "react";
+import classNames from "classnames";
 
 export default function About() {
+  const [isVisible, setIsVisible] = useState<boolean>(false);
+  const ref = useRef<HTMLDivElement>(null);
   const fileName = "Faisal_Hakimi_SoftwareEngineer_Resume.pdf";
 
   useEffect(() => {
-    try {
-      document.title = "Faisal Hakimi | About";
-      const layout = document.getElementById("layout-content");
-      if (layout) layout.scrollTop = 0;
-    } catch (error) {}
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
   }, []);
 
   const downloadFile = () => {
@@ -29,40 +48,70 @@ export default function About() {
     }
   };
 
-  const goToSection = (
-    section_id: "about-skills" | "about-experience" | "about-education"
-  ) => {
-    document.getElementById(section_id)?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
-    <div className="w-full max-w-xl mx-auto relative my-6">
-      <div className="sticky left-0 top-0 right-0 flex items-center z-20 max-w-xl mx-auto text-xl py-2 bg-brand-dark md:rounded-lg shadow-md">
-        <button
-          onClick={() => goToSection("about-skills")}
-          className="flex-1 hover:underline"
-        >
-          Skills
-        </button>
-        <button
-          onClick={() => goToSection("about-experience")}
-          className="flex-1 hover:underline"
-        >
-          Experience
-        </button>
-        <button
-          onClick={() => goToSection("about-education")}
-          className="flex-1 hover:underline"
-        >
-          Education
-        </button>
-      </div>
+    <div
+      ref={ref}
+      id="about-page"
+      className={classNames(
+        "w-full max-w-xl mx-auto relative my-6 transition-transform duration-700 ease-out",
+        {
+          "translate-y-0 opacity-100 pt-14": isVisible,
+          "translate-y-10 opacity-0 ": !isVisible,
+        }
+      )}
+    >
       <div className="px-6 flex flex-col items-center justify-center gap-4 pt-6">
         <img
-          className=" w-32 h-32 rounded-full bounce-in-top"
+          className={classNames("w-32 h-32 rounded-full", {
+            "bounce-in-top": isVisible,
+          })}
           src={PFP}
           alt="Faisal Hakimi"
         />
+        <div className="flex items-center justify-center gap-6 max-w-xl m-auto h-full">
+          <a
+            data-tooltip-id="tooltip-linkedin"
+            data-tooltip-content="LinkedIn"
+            href="https://www.linkedin.com/in/faisal-hakimi"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <LinkedInIcon
+              className={classNames("fill-white", {
+                "slide-in-left": isVisible,
+              })}
+            />
+          </a>
+          <a
+            data-tooltip-id="tooltip-github"
+            data-tooltip-content="GitHub"
+            href="https://github.com/iamfaisalh"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <GitHubIcon
+              className={classNames("fill-white", {
+                "slide-in-top": isVisible,
+              })}
+            />
+          </a>
+          <a
+            data-tooltip-id="tooltip-email"
+            data-tooltip-content="Email"
+            href="mailto:faisalhakimi101@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <GmailIcon
+              className={classNames("fill-white", {
+                "slide-in-right": isVisible,
+              })}
+            />
+          </a>
+        </div>
+        <Tooltip id="tooltip-linkedin" />
+        <Tooltip id="tooltip-github" />
+        <Tooltip id="tooltip-email" />
         <p className="text-sm">
           I'm a full-stack software engineer based in the San Francisco Bay Area
           with 3 years of professional experience and over 7 years of coding
@@ -92,14 +141,14 @@ export default function About() {
         <p className="text-lg font-bold">Featured Skills</p>
       </div>
       <div className="px-6 grid grid-cols-2 gap-4">
-        <SkillRating skill={"TypeScript"} rating={9.5} />
-        <SkillRating skill={"JavaScript"} rating={9.5} />
-        <SkillRating skill={"React"} rating={9.5} />
-        <SkillRating skill={"Next.js"} rating={9} />
-        <SkillRating skill={"Node.js"} rating={9} />
-        <SkillRating skill={"Express.js"} rating={9} />
-        <SkillRating skill={"Python"} rating={8.5} />
-        <SkillRating skill={"Tailwind CSS"} rating={8} />
+        <SkillRating isVisible={isVisible} skill={"TypeScript"} rating={9.5} />
+        <SkillRating isVisible={isVisible} skill={"JavaScript"} rating={9.5} />
+        <SkillRating isVisible={isVisible} skill={"React"} rating={9.5} />
+        <SkillRating isVisible={isVisible} skill={"Next.js"} rating={9} />
+        <SkillRating isVisible={isVisible} skill={"Node.js"} rating={9} />
+        <SkillRating isVisible={isVisible} skill={"Express.js"} rating={9} />
+        <SkillRating isVisible={isVisible} skill={"Python"} rating={8.5} />
+        <SkillRating isVisible={isVisible} skill={"Tailwind CSS"} rating={8} />
       </div>
       <div className="px-6  pt-6 flex flex-col">
         <p className="text-lg font-bold">All Skills</p>
