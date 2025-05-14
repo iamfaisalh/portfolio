@@ -61,7 +61,7 @@ function Project({ project }: { project: ProjectProps }) {
         <p className="mb-3 font-normal text-gray-400">{project.description}</p>
         <p className="mb-3 text-sm">{project.skills}</p>
         <div className="flex items-center">
-          {project.github_url ? (
+          {project.github_url && !project.is_coming_soon ? (
             <a
               href={project.github_url}
               rel="noreferrer"

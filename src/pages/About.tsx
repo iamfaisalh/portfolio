@@ -10,7 +10,7 @@ import classNames from "classnames";
 export default function About() {
   const [isVisible, setIsVisible] = useState<boolean>(false);
   const ref = useRef<HTMLDivElement>(null);
-  const fileName = "Faisal_Hakimi_SoftwareEngineer_Resume.pdf";
+  const fileName = "Faisal_Hakimi_Software_Engineer_Resume.pdf";
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -112,9 +112,9 @@ export default function About() {
         <Tooltip id="tooltip-linkedin" />
         <Tooltip id="tooltip-github" />
         <Tooltip id="tooltip-email" />
-        <p className="text-sm">
+        <p className="text-sm text-gray-300">
           I'm a full-stack software engineer based in the San Francisco Bay Area
-          with 3 years of professional experience and over 7 years of coding
+          with 4 years of professional experience and over 8 years of coding
           experience.
           <br></br>
           <br></br>
@@ -155,42 +155,43 @@ export default function About() {
       </div>
       <div className="px-6 flex flex-col">
         <p className="font-semibold text-sm mt-2 mb-1 ">Programming</p>
-        <p className="text-sm space-y-1">
+        <p className="text-sm space-y-1 text-gray-300">
           TypeScript, JavaScript, Node.js, HTML (HTML5), CSS, Sass SCSS, Python,
           SQL, Java, C programming, C++, Swift, Ruby
         </p>
       </div>
       <div className="px-6 flex flex-col">
         <p className="font-semibold text-sm mt-2 mb-1">Frameworks/Libraries</p>
-        <p className="text-sm space-y-1">
-          React, Redux, Next.js, Express.js, Django, Flask, Tailwind CSS,
+        <p className="text-sm space-y-1 text-gray-300">
+          Next.js, React, Redux, Express.js, Django, Flask, Tailwind CSS,
           Bootstrap, Material UI, Cypress, Jest
         </p>
       </div>
       <div className="px-6 flex flex-col">
         <p className="font-semibold text-sm mt-2 mb-1">Databases</p>
-        <p className="text-sm space-y-1">
+        <p className="text-sm space-y-1 text-gray-300">
           PostgreSQL (Postgres), Supabase, MySQL, MongoDB, Firebase, Firestore
         </p>
       </div>
       <div className="px-6 flex flex-col">
         <p className="font-semibold text-sm mt-2 mb-1">Tools/Platforms</p>
-        <p className="text-sm space-y-1">
+        <p className="text-sm space-y-1 text-gray-300">
           Amazon Web Services (AWS), Google Cloud Platform (GCP), Nginx, Git,
-          GitHub, Docker, Kubernetes, VS Code, Xcode, PyCharm, IntelliJ, Figma,
-          WebSocket, Vercel, LLM (OpenAI)
+          GitHub, Jira, Linear, Docker, Kubernetes, VS Code, Xcode, PyCharm,
+          IntelliJ, Figma, WebSocket, Vercel, LLMs (OpenAI),
+          LangChain/LangGraph, GSAP
         </p>
       </div>
       <div className="px-6 flex flex-col">
         <p className="font-semibold text-sm mt-2 mb-1">Methodologies</p>
-        <p className="text-sm space-y-1">
+        <p className="text-sm space-y-1 text-gray-300">
           Agile, Scrum, Test-Driven Development (TDD), Single Page Application
-          (SPA)
+          (SPA), A/B Testing, SEO
         </p>
       </div>
       <div className="px-6 flex flex-col">
         <p className="font-semibold text-sm mt-2 mb-1">Soft Skills</p>
-        <p className="text-sm space-y-1">
+        <p className="text-sm space-y-1 text-gray-300">
           Communication, Collaboration, Problem-solving, Adaptability, Time
           Management, Leadership, Creativity, Client Management, Attention to
           Detail, Conflict Resolution
@@ -209,20 +210,26 @@ export default function About() {
             Self-employed | San Francisco, California
           </p>
           <p className="font-semibold text-sm">Feb 2024 - Present</p>
-          <ul className="text-sm list-disc pl-4 space-y-1 mt-2">
+          <ul className="text-sm list-disc pl-4 space-y-1 mt-2 text-gray-300">
             <li>
-              Developed software for a local nonprofit organization to
-              streamline financial workflows, including payment handling for
-              memberships and donations, reducing manual effort and improving
-              efficiency.
+              Developed a custom Retrieval-Augmented Generation (RAG) agent
+              leveraging OpenAI and Supabase for document- based vector store
+              querying, tailored to the client's industry-specific content.
             </li>
             <li>
-              Built and deployed multiple personal projects to enhance expertise
-              in modern web technologies, such as Next.js, Python, and Flask.
+              Optimized a client's website SEO and Core Web Vitals, raising
+              mobile performance score from 33 to 88 and desktop score from 70
+              to 100 on Google PageSpeed Insights.
             </li>
             <li>
-              Improved prompt engineering skills with the OpenAI API, optimizing
-              models for accurate and context-aware responses.
+              Boosted global search visibility for a client by generating a
+              dynamic XML sitemap with region-aware support and implementing
+              hreflang metadata, enabling proper indexing of localized content.
+            </li>
+            <li>
+              Built software for a local nonprofit organization to streamline
+              financial workflows, including payment handling for memberships
+              and donations, reducing manual effort and improving efficiency.
             </li>
           </ul>
         </div>
@@ -234,13 +241,13 @@ export default function About() {
             Dart Health (Puzzl Inc) | San Francisco, California
           </p>
           <p className="font-semibold text-sm">Sep 2021 - Feb 2024</p>
-          <p className="text-sm space-y-1">
+          <p className="text-sm space-y-1 text-gray-300">
             {"Startup: CRM --> Fintech --> Healthcare Compliance"}
           </p>
           <p className="font-semibold text-sm mt-2 mb-1">
             Key Responsibilities
           </p>
-          <ul className="text-sm list-disc pl-4 space-y-1">
+          <ul className="text-sm list-disc pl-4 space-y-1 text-gray-300">
             <li>
               Tailored a healthcare compliance chatbot with OpenAI Assistants
               API, reducing user questions to the cofounders by 40% and easing
@@ -276,11 +283,11 @@ export default function About() {
             MarketFly (Acquired) | San Francisco, California (Remote)
           </p>
           <p className="font-semibold text-sm">Jan 2021 - Sep 2021</p>
-          <p className="text-sm space-y-1">SaaS Startup</p>
+          <p className="text-sm space-y-1 text-gray-300">SaaS Startup</p>
           <p className="font-semibold text-sm mt-2 mb-1">
             Key Responsibilities
           </p>
-          <ul className="text-sm list-disc pl-4 space-y-1">
+          <ul className="text-sm list-disc pl-4 space-y-1 text-gray-300">
             <li>
               Played a key role in the startup's successful acquisition by
               designing a marketing automation feature for users to authenticate
@@ -319,7 +326,7 @@ export default function About() {
           </p>
           <p className="font-semibold text-sm">Graduated 2022</p>
           <p className="font-semibold text-sm mt-2 mb-1">Relevant Courses</p>
-          <p className="text-sm space-y-1">
+          <p className="text-sm space-y-1 text-gray-300">
             Software Engineering, Artificial Intelligence, Analysis of
             Algorithms, Operating System Principles, Databases, Multimedia
             Systems, Internet Application Design and Development,
@@ -327,7 +334,7 @@ export default function About() {
             Programming Paradigms and Languages, Design Patterns.
           </p>
           <p className="font-semibold text-sm mt-2 mb-1">Key Projects</p>
-          <ul className="text-sm list-disc pl-4 space-y-1">
+          <ul className="text-sm list-disc pl-4 space-y-1 text-gray-300">
             <li>
               Used Python and MATLAB for a multimedia project to determine
               motion fields using optic flow and Kalman filtering to detect and
